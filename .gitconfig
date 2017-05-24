@@ -1,0 +1,53 @@
+[user]
+	email = tjdane@gmail.com
+	name = Tom Dane
+	initials = TD
+[core]
+	autocrlf = true
+	safecrlf = warn
+	editor = notepad
+	excludesfile = ~/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	a = add .
+	aa = add --all
+	b = branch
+	bd = branch -D
+	c = commit
+	cm = commit -m 
+	ca = commit --amend
+	cac = commit --amend -C HEAD
+	cane = commit --amend --no-edit
+	ch = checkout
+	chb = checkout -b
+	chm = checkout master
+	chom = checkout origin/master
+	d = diff
+	dm = diff master
+	dmn = diff master --name-only	
+	down = pull origin
+	downh = pull origin
+	downr = pull --rebase origin
+	downm =  pull origin master
+	downmr = pull --rebase origin master
+	f = fetch
+	l = log --oneline -10
+	m = merge
+	mm = merge master
+	mr = rebase master
+	s = status
+	st = stash
+	stp = stash pop
+	stsw = stash save "wistia"
+	staw = stash apply "stash^{/wistia*}"
+	up = push origin
+	upfh = push origin HEAD --force-with-lease
+	uph = push origin HEAD
+	upm = push origin master
+	foo = !f() { target=$(git rev-parse HEAD)} f
+[rerere]
+	enabled = 1
