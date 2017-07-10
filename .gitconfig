@@ -30,7 +30,6 @@
 	dm = diff master
 	dmn = diff master --name-only	
 	down = pull origin
-	downh = pull origin
 	downr = pull --rebase origin
 	downm =  pull origin master
 	downmr = pull --rebase origin master
