@@ -20,7 +20,7 @@
 	c = commit
 	cm = commit -m 
 	ca = commit --amend
-	cac = commit --amend -C HEAD
+	cah = commit --amend -C HEAD
 	cane = commit --amend --no-edit
 	ch = checkout
 	chb = checkout -b
@@ -29,24 +29,21 @@
 	d = diff
 	dm = diff master
 	dmn = diff master --name-only	
-	down = pull origin
-	downr = pull --rebase origin
-	downm =  pull origin master
-	downmr = pull --rebase origin master
+	po = pull origin
+	pro = pull --rebase origin
+	pom =  pull origin master
+	prom = pull --rebase origin master
 	f = fetch
-	l = log --oneline -10
+	l = log --oneline -20
 	m = merge
 	mm = merge master
 	mr = rebase master
 	s = status
 	st = stash
 	stp = stash pop
-	stsw = stash save "wistia"
-	staw = stash apply "stash^{/wistia*}"
 	up = push origin
 	upfh = push origin HEAD --force-with-lease
 	uph = push origin HEAD
 	upm = push origin master
-	foo = !f() { target=$(git rev-parse HEAD)} f
 [rerere]
 	enabled = 1
