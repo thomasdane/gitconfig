@@ -1,36 +1,21 @@
 [user]
 	email = tjdane@gmail.com
 	name = Tom Dane
-	initials = TD
-[core]
-	autocrlf = true
-	safecrlf = warn
-	editor = notepad
-	excludesfile = ~/.gitignore_global
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [alias]
 	a = add .
 	aa = add --all
 	b = branch
 	bd = branch -D
 	c = commit
-	cm = commit -m 
-	ca = commit --amend
-	cah = commit --amend -C HEAD
+	cm = commit -m
+	cam = commit --amend -m 
 	cane = commit --amend --no-edit
 	ch = checkout
 	chb = checkout -b
-	chm = checkout master
-	chom = checkout origin/master
 	d = diff
 	dm = diff master
 	dmn = diff master --name-only	
 	po = pull origin
-	pro = pull --rebase origin
 	pom =  pull origin master
 	prom = pull --rebase origin master
 	f = fetch
