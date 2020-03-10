@@ -6,7 +6,7 @@
 	aa = add --all
 	b = branch
 	bd = branch -D
-	cm = commit -a -m "message"
+	cm = commit -m
 	cam = commit --amend -m 
 	cane = commit --amend --no-edit
 	ch = checkout
