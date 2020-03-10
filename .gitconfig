@@ -11,6 +11,7 @@
 	cane = commit --amend --no-edit
 	ch = checkout
 	chb = checkout -b
+	chm = checkout master
 	d = diff
 	dm = diff master
 	dmn = diff master --name-only	
